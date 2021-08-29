@@ -2,6 +2,8 @@ app-id: com.ianmjones.wails-flatpak
 runtime: org.gnome.Platform
 runtime-version: '3.38'
 sdk: org.gnome.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.golang
 command: wails-flatpak
 finish-args:
   # Window Manager
@@ -13,7 +15,8 @@ modules:
   - name: wails-flatpak
     buildsystem: simple
     build-commands:
+      - . /usr/lib/sdk/golang/enable.sh; go build
       - install -D wails-flatpak /app/bin/wails-flatpak
     sources:
-      - type: file
-        path: build/wails-flatpak
+      - type: dir
+        path: .

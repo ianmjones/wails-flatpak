@@ -6,7 +6,7 @@ import (
 )
 
 func basic() string {
-	return "World!"
+	return "Flatpak World!"
 }
 
 //go:embed frontend/public/build/bundle.js
