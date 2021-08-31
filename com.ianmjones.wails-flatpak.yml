@@ -19,5 +19,3 @@ modules:
         url: https://github.com/ianmjones/wails-flatpak/releases/download/0.1/wails-flatpak.tar.gz
         sha256: "ac7c3093f684ffef2407292a70747240cfced2544d7b7fd5d742fbaa5348e4d2"
         strip-components: 0
-      - type: dir
-        path: .
