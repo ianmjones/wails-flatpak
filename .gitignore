@@ -1,4 +1,4 @@
 /build/
+*.tgz
 /.flatpak-builder/
-/wails-flatpak.tar.gz
 /.flatpak-tmp/
